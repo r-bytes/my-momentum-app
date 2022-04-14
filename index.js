@@ -1,20 +1,3 @@
-// async function getImage() {
-//   const response = await fetch('https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature')
-//   const data = await response.json()
-//     document.body.style.backgroundImage = `url(${data.urls.full})`;
-//     console.log(data);
-  
-//   if(data.location.title === null) {
-//     document.getElementById('author').textContent = `
-//       Created by: ${data.user.name}`
-//   } else {
-//     document.getElementById('author').innerHTML = `
-//       Created by: ${data.user.name} <br>
-//       Location: ${data.location.title}`
-//   }
-
-// }
-
 // ========================================================
 // = Fetch background from UnSplash
 // ========================================================
@@ -39,9 +22,8 @@ fetch('https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
 });
 
 // ========================================================
-// = Fetch Crypto's from CoinGecko
+// = Fetch Crypto's from CoinGecko - BTC
 // ========================================================
-// BTC
 fetch('https://api.coingecko.com/api/v3/coins/bitcoin')
 .then(response => {
   if(!response.ok) {
@@ -59,9 +41,8 @@ fetch('https://api.coingecko.com/api/v3/coins/bitcoin')
 .catch(err => console.log(err))
 
 // ========================================================
-// = Fetch Crypto's from CoinGecko
+// = Fetch Crypto's from CoinGecko - ETH
 // ========================================================
-// = ETH
 fetch('https://api.coingecko.com/api/v3/coins/ethereum')
 .then(response => {
   if(!response.ok) {
@@ -78,9 +59,8 @@ fetch('https://api.coingecko.com/api/v3/coins/ethereum')
 .catch(err => console.log(err))
 
 // ========================================================
-// = Fetch Crypto's from CoinGecko
+// = Fetch Crypto's from CoinGecko - CARDANO
 // ========================================================
-// CARDANO
 fetch('https://api.coingecko.com/api/v3/coins/cardano')
 .then(response => {
   if(!response.ok) {
